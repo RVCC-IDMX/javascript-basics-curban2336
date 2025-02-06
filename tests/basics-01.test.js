@@ -26,7 +26,7 @@
    TODO: Use the let keyword to declare a variable called myName and do NOT assign it a value.
 */
 // * Add your code BELOW here
-
+let myName;
 // * Don't mess with the test code below here!
 test('myName', () => {
   expect(myName).toBeUndefined();
@@ -44,7 +44,7 @@ test('myName', () => {
    TODO: Use the let keyword to create a variable called age and assign it the number literal 22.
 */
 // * Add your code BELOW here
-
+let age = 22;
 // * Don't mess with the test code below here!
 test('age', () => {
   expect(age).toBe(22);
@@ -62,7 +62,7 @@ test('age', () => {
    TODO: Use the const keyword to create a constant called daysInWeek and assign it the number literal 7.
 */
 // * Add your code BELOW here
-
+const daysInWeek = 7;
 // * Don't mess with the test code below here!
 test('daysInWeek', () => {
   expect(() => {
@@ -87,7 +87,8 @@ test('daysInWeek', () => {
    TODO: DO NOT use the number literal 7 directly.
 */
 // * Add your code BELOW here
-
+let myWorkDays;
+myWorkDays = daysInWeek;
 // * Don't mess with the test code below here!
 test('myWorkDays', () => {
   expect(typeof myWorkDays).toBe('number');
@@ -113,7 +114,9 @@ test('myWorkDays', () => {
    - Consider why the result is NaN and why NaN does not equal any other value.
 */
 // * Add your code BELOW here
-
+let oops;
+let sillyMath;
+sillyMath = oops * 2;
 // * Don't mess with the test code below here!
 test('sillyMath', () => {
   expect(oops).toBeUndefined();
@@ -133,7 +136,8 @@ test('sillyMath', () => {
    TODO: In the second line, assign sillyString to the string 'Hello, ' concatenated with oops.
 */
 // * Add your code BELOW here
-
+let sillyString;
+sillyString = "Hello, " + oops;
 // * Don't mess with the test code below here!
 test('sillyString', () => {
   expect(oops).toBeUndefined();
@@ -151,7 +155,9 @@ test('sillyString', () => {
    (Make sure to use let for variables and const for constants.)
 */
 // * Add your code BELOW here
-
+let year = 2022;
+let firstName = 'John';
+const taxRate = 0.2;
 // * Don't mess with the test code below here!
 test('year', () => {
   expect(year).toBe(2022);
@@ -180,4 +186,6 @@ test('taxRate', () => {
    Challenge Question:
    - Why does multiplying an undefined variable result in NaN, and why does NaN not equal any value, including itself?
    (Discuss with your peers or research the IEEE 754 standard for floating-point arithmetic.)
+   - This is because NaN is undefined, the code has no way of equaling it to anything because it, by nature, has nothing to use as a metric.
+   - If you multiply 2 by x, the result is 2x. x is not quantified and so the result is unquantifiable.
 */

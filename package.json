@@ -10,12 +10,24 @@
     "test": "cd tests & vitest basics-01.test.js basics-02.test.js basics-03.test.js basics-04.test.js --silent --globals --run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Christopher Urban <g00269489s@stu.raritanval.edu> (https://github.com/curban2336)",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "eslint": "^9.19.0",
     "globals": "^15.14.0",
     "vitest": "^3.0.4"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/javascript-basics-curban2336.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/javascript-basics-curban2336/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/javascript-basics-curban2336#readme"
 }
